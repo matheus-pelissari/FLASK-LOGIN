@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<!--Action indica para onde os dados do formulário serão enviador quando o botão submit for clicado (enviado via POST).-->
+<form action="http://localhost:8080/add_sensor" method = "post">
+    <p>Nome Sensor:</p>
+    <p><input type="text" name = "sensor" placeholder="Nome Sensor" required></p>
+    <p>Valor Sensor:</p>
+    <p><input type="text" name = "valor" placeholder="Valor Sensor" required></p>
+    <p><input type="submit" value = "Cadastrar"></p>
+    <p>Voltar para <a href="/home">página inicial</a></p>
+</form>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Usuários: </h1>
+    <ul>
+        {% for nomeUsuario, senhaUsuario in usuarios.items() %}
+        <li>{{ nomeUsuario }} : {{ senhaUsuario }}</li>
+        {% endfor %}
+    </ul>
+    <p>Voltar para <a href="/home">página inicial</a></p>
+{% endblock %}

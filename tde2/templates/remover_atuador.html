@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="http://localhost:8080/del_atuador" method="post">
+    <select name="atuador" class="Input">
+        {% for i, j in atuadores.items() %}
+        <option>{{ i }}</option>
+        {% endfor %}
+        <p><input type="submit" value="Deletar"></p>
+        <p>Voltar para <a href="/home">página inicial</a></p>
+    </select>
+</form>
+{% endblock %}
+

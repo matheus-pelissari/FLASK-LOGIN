@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<!--Action indica para onde os dados do formulário serão enviador quando o botão submit for clicado (enviado via POST).-->
+<form action="http://localhost:8080/add_atuador" method = "post">
+    <p>Nome Atuador:</p>
+    <p><input type="text" name = "atuador" placeholder="Nome Atuador" required></p>
+    <p>Valor atuador:</p>
+    <p><input type="text" name = "valor_a" placeholder="Valor Atuador" required></p>
+    <p><input type="submit" value = "Cadastrar"></p>
+    <p>Voltar para <a href="/home">página inicial</a></p>
+</form>
+{% endblock %}
